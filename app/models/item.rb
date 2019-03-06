@@ -5,7 +5,7 @@ class Item < ApplicationRecord
   validates :image_url, presence: true, length: { maximum: 255 }
   
   has_many :ownerships
-  has_many :user, thouught: :wants, source: :ownerships
+  has_many :user, thouugh: :ownerships
 
   has_many :wants
   has_many :want_users, through: :wants, source: :user
